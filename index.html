@@ -187,36 +187,6 @@
     .doc-content table{border-collapse:collapse;width:100%;margin:.5em 0;overflow-x:auto;display:block;}
     .doc-content td,.doc-content th{border:1px solid var(--border);padding:6px 10px;min-width:60px;}
 
-    /* ── stamp ── */
-    .stamp-month-nav{display:flex;align-items:center;justify-content:space-between;width:100%;margin-bottom:14px;}
-    .stamp-month-label{font-size:18px;font-weight:bold;color:var(--title);}
-    .stamp-month-btn{background:none;border:none;font-size:24px;color:var(--p1);cursor:pointer;padding:4px 14px;-webkit-tap-highlight-color:transparent;}
-    .cal-wrap{width:100%;background:var(--card-bg);border-radius:16px;padding:12px;box-shadow:0 2px 12px rgba(0,0,0,.07);margin-bottom:20px;}
-    .cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;}
-    .cal-hd{text-align:center;font-size:11px;font-weight:bold;color:var(--sub);padding:4px 0;}
-    .cal-hd.sun{color:#ef4444;} .cal-hd.sat{color:#3b82f6;}
-    .cal-cell{aspect-ratio:1;display:flex;align-items:center;justify-content:center;border-radius:8px;position:relative;flex-direction:column;}
-    .cal-today{border:2px solid var(--p1);}
-    .cal-future{opacity:.35;}
-    .cal-day{font-size:13px;font-weight:bold;color:var(--title);}
-    .cal-day.sun{color:#ef4444;} .cal-day.sat{color:#3b82f6;}
-    .cal-day.dim{color:var(--sub);font-weight:normal;}
-    .stamp-img{width:82%;height:82%;object-fit:contain;}
-    .cal-day-small{position:absolute;bottom:1px;right:3px;font-size:8px;color:var(--sub);line-height:1;}
-    .stamp-press-btn{width:100%;padding:18px;background:linear-gradient(135deg,var(--p1),var(--p2));color:white;border:none;border-radius:16px;font-size:17px;font-weight:bold;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:transform .15s,opacity .15s;}
-    .stamp-press-btn:active{transform:scale(.97);}
-    .stamp-sel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:4px;}
-    .stamp-sel-btn{aspect-ratio:1;border-radius:16px;border:3px solid var(--border);background:var(--bg);cursor:pointer;display:flex;align-items:center;justify-content:center;padding:10px;-webkit-tap-highlight-color:transparent;transition:border-color .15s,transform .15s;}
-    .stamp-sel-btn:active{transform:scale(.93);}
-    .stamp-sel-btn img{width:100%;height:100%;object-fit:contain;}
-    .stamp-sel-btn .stamp-emoji{font-size:40px;}
-    .stamp-home-card{width:100%;padding:14px 18px;background:var(--card-bg);border-radius:14px;border-left:4px solid var(--s1);display:flex;align-items:center;gap:12px;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.06);margin-bottom:16px;-webkit-tap-highlight-color:transparent;transition:opacity .15s;}
-    .stamp-home-card:active{opacity:.7;}
-    .stamp-home-icon{font-size:28px;}
-    .stamp-home-info{flex:1;}
-    .stamp-home-title{font-size:15px;font-weight:bold;color:var(--title);}
-    .stamp-home-sub{font-size:12px;color:var(--sub);margin-top:2px;}
-
     /* ── global back ── */
     .g-back{position:fixed;bottom:24px;left:20px;width:46px;height:46px;border-radius:50%;border:none;background:var(--card-bg);color:var(--title);font-size:20px;cursor:pointer;box-shadow:0 2px 12px rgba(0,0,0,.15);z-index:100;display:none;align-items:center;justify-content:center;-webkit-tap-highlight-color:transparent;transition:opacity .15s;}
     .g-back:active{opacity:.6;}
@@ -246,6 +216,47 @@
     /* ── red sheet ── */
     .red-hidden{border-radius:3px;cursor:pointer;padding:1px 3px;transition:background .25s,color .25s;display:inline;-webkit-user-select:none;user-select:none;}
     .red-hidden.revealed{background:rgba(128,128,128,.15) !important;color:inherit !important;}
+
+    /* ── download btn ── */
+    .dl-btn{margin-top:10px;width:100%;padding:13px;background:none;border:2px solid var(--p1);border-radius:14px;color:var(--p1);font-size:15px;font-weight:bold;cursor:pointer;-webkit-tap-highlight-color:transparent;}
+    .dl-btn:active{background:var(--ul-hover);}
+
+    /* ── background image ── */
+    .bg-section{margin-top:20px;padding-top:16px;border-top:1px solid var(--border);}
+    .bg-upload-btn{width:100%;padding:12px;border:2px dashed var(--ul-border);border-radius:12px;background:none;color:var(--badge-fg);font-size:14px;font-weight:bold;cursor:pointer;-webkit-tap-highlight-color:transparent;}
+    .bg-clear-btn{margin-top:8px;width:100%;padding:10px;border:none;border-radius:12px;background:var(--border);color:var(--sub);font-size:13px;font-weight:bold;cursor:pointer;-webkit-tap-highlight-color:transparent;}
+
+    /* ── stamp ── */
+    .stamp-home-card{width:100%;padding:14px 18px;background:var(--card-bg);border-radius:14px;border-left:4px solid var(--s1);display:flex;align-items:center;gap:12px;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.06);margin-bottom:16px;-webkit-tap-highlight-color:transparent;transition:opacity .15s;}
+    .stamp-home-card:active{opacity:.7;}
+    .stamp-home-icon{font-size:28px;}
+    .stamp-home-info{flex:1;}
+    .stamp-home-title{font-size:15px;font-weight:bold;color:var(--title);}
+    .stamp-home-sub{font-size:12px;color:var(--sub);margin-top:2px;}
+    .stamp-month-nav{display:flex;align-items:center;justify-content:space-between;width:100%;margin-bottom:14px;}
+    .stamp-month-label{font-size:18px;font-weight:bold;color:var(--title);}
+    .stamp-month-btn{background:none;border:none;font-size:24px;color:var(--p1);cursor:pointer;padding:4px 14px;-webkit-tap-highlight-color:transparent;}
+    .cal-wrap{width:100%;background:var(--card-bg);border-radius:16px;padding:12px;box-shadow:0 2px 12px rgba(0,0,0,.07);margin-bottom:20px;}
+    .cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;}
+    .cal-hd{text-align:center;font-size:11px;font-weight:bold;color:var(--sub);padding:4px 0;}
+    .cal-hd.sun{color:#ef4444;} .cal-hd.sat{color:#3b82f6;}
+    .cal-cell{aspect-ratio:1;display:flex;align-items:center;justify-content:center;border-radius:8px;position:relative;flex-direction:column;}
+    .cal-today{border:2px solid var(--p1);}
+    .cal-future{opacity:.35;}
+    .cal-day{font-size:13px;font-weight:bold;color:var(--title);}
+    .cal-day.sun{color:#ef4444;} .cal-day.sat{color:#3b82f6;}
+    .cal-day.dim{color:var(--sub);font-weight:normal;}
+    .stamp-img{width:82%;height:82%;object-fit:contain;}
+    .cal-day-small{position:absolute;bottom:1px;right:3px;font-size:8px;color:var(--sub);line-height:1;}
+    .stamp-press-btn{width:100%;padding:18px;background:linear-gradient(135deg,var(--p1),var(--p2));color:white;border:none;border-radius:16px;font-size:17px;font-weight:bold;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:transform .15s,opacity .15s;}
+    .stamp-press-btn:active{transform:scale(.97);}
+    .stamp-sel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:4px;}
+    .stamp-slot{aspect-ratio:1;border-radius:14px;border:2px solid var(--border);background:var(--bg);cursor:pointer;display:flex;align-items:center;justify-content:center;padding:8px;position:relative;-webkit-tap-highlight-color:transparent;transition:border-color .15s,transform .15s;}
+    .stamp-slot:active{transform:scale(.93);}
+    .stamp-slot img{width:100%;height:100%;object-fit:contain;}
+    .stamp-slot-add{font-size:28px;color:var(--sub);border-style:dashed;}
+    .stamp-slot-del{position:absolute;top:-6px;right:-6px;width:20px;height:20px;border-radius:50%;background:#ef4444;color:white;font-size:11px;display:flex;align-items:center;justify-content:center;font-weight:bold;z-index:1;}
+    .stamp-empty{text-align:center;color:var(--sub);font-size:13px;padding:8px 0 4px;grid-column:1/-1;}
   </style>
 </head>
 <body>
@@ -264,6 +275,12 @@
     <button class="t-opt" data-theme="ichigo" onclick="setTheme('ichigo')"><span class="t-swatch" style="background:linear-gradient(135deg,#c9184a,#fbb1bd)"></span><span class="t-name">イチゴ</span></button>
     <button class="t-opt" data-theme="matcha" onclick="setTheme('matcha')"><span class="t-swatch" style="background:linear-gradient(135deg,#4f6f52,#d8efd3)"></span><span class="t-name">抹茶</span></button>
     <button class="t-opt" data-theme="cotton" onclick="setTheme('cotton')"><span class="t-swatch" style="background:linear-gradient(135deg,#ff6fa3,#9ed9ff)"></span><span class="t-name">わたあめ</span></button>
+  </div>
+  <div class="bg-section">
+    <div class="fmt-label">背景画像</div>
+    <input type="file" id="bg-file-input" accept="image/*" style="display:none">
+    <button class="bg-upload-btn" onclick="document.getElementById('bg-file-input').click()">📷 背景画像をアップロード</button>
+    <button class="bg-clear-btn" id="bg-clear-btn" onclick="clearBgImage()" style="display:none">背景画像をリセット</button>
   </div>
 </div>
 
@@ -463,6 +480,7 @@
 <div class="btm-panel" id="stamp-sel-panel">
   <div class="panel-handle"></div>
   <div class="panel-title">スタンプを選ぼう</div>
+  <input type="file" id="stamp-img-input" accept="image/*" style="display:none">
   <div class="stamp-sel-grid" id="stamp-sel-grid"></div>
 </div>
 
@@ -802,8 +820,10 @@ function renderDetail() {
     ngListHtml = `<div class="info-box">🎉 全カード暗記済みです！</div>`;
   }
 
+  const dlBtn = (!never && ngN > 0)
+    ? `<button class="dl-btn" onclick="downloadNG()">⬇ 未暗記一覧をダウンロード (${ngN}語)</button>` : '';
   document.getElementById('det-body').innerHTML =
-    statsHtml + orderHtml + btnsHtml + ngListHtml +
+    statsHtml + orderHtml + btnsHtml + ngListHtml + dlBtn +
     `<button class="del-btn" onclick="delDeck()">このデッキを削除</button>`;
 }
 
@@ -1018,99 +1038,101 @@ function retryAll() {
   showScreen('study-screen'); renderCard();
 }
 
+/* ── Download ── */
+function downloadNG() {
+  const deck = loadDecks().find(d => d.id === currentDeckId);
+  if (!deck || !deck.notMemorizedIndices || !deck.notMemorizedIndices.length) return;
+  const rows = deck.notMemorizedIndices.map(i => {
+    const w = deck.words[i];
+    return `"${w.front.replace(/"/g,'""')}","${w.back.replace(/"/g,'""')}"`;
+  });
+  const csv = '表,裏\n' + rows.join('\n');
+  const blob = new Blob(['﻿' + csv], { type: 'text/csv;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = (deck.name || 'deck') + '_未暗記.csv'; a.click();
+  URL.revokeObjectURL(url);
+}
+
+/* ── Background image ── */
+const BG_KEY = 'tc-bg';
+function loadBgImage() {
+  const bg = localStorage.getItem(BG_KEY);
+  const clearBtn = document.getElementById('bg-clear-btn');
+  if (bg) {
+    document.body.style.cssText += ';background-image:url(' + bg + ');background-size:cover;background-attachment:fixed;background-position:center;';
+    if (clearBtn) clearBtn.style.display = 'block';
+  } else {
+    document.body.style.backgroundImage = '';
+    if (clearBtn) clearBtn.style.display = 'none';
+  }
+}
+function clearBgImage() {
+  localStorage.removeItem(BG_KEY);
+  document.body.style.backgroundImage = '';
+  document.getElementById('bg-clear-btn').style.display = 'none';
+}
+document.getElementById('bg-file-input').addEventListener('change', e => {
+  const file = e.target.files[0]; if (!file) return;
+  const reader = new FileReader();
+  reader.onload = ev => { localStorage.setItem(BG_KEY, ev.target.result); loadBgImage(); };
+  reader.readAsDataURL(file);
+  e.target.value = '';
+});
+
 /* ── Stamp ── */
 const STAMP_KEY = 'tc-stamps';
+const STAMP_IMG_KEY = 'tc-stamp-imgs';
 let stampYear, stampMonth;
 
-// stamp image files: stamp1.png ~ stamp6.png (replace with your images)
-// emoji shown as fallback until images are uploaded
-const STAMP_LIST = [
-  { id:1, src:'stamp1.png', fb:'🐸' },
-  { id:2, src:'stamp2.png', fb:'🐱' },
-  { id:3, src:'stamp3.png', fb:'⛵' },
-  { id:4, src:'stamp4.png', fb:'🏰' },
-  { id:5, src:'stamp5.png', fb:'🐈‍⬛' },
-  { id:6, src:'stamp6.png', fb:'🐾' },
-  { id:7, src:'stamp7.png', fb:'👻' },
-  { id:8, src:'stamp8.png', fb:'🌸' },
-  { id:9, src:'stamp9.png', fb:'🍤' },
-  { id:10, src:'stamp10.png', fb:'🐙' },
-  { id:11, src:'stamp11.png', fb:'🐱' },
-];
-
 function loadStamps() {
-  try {
-    const raw = JSON.parse(localStorage.getItem(STAMP_KEY) || '{}');
-    // migrate old Set format (array of strings → all stamp id 1)
-    if (Array.isArray(raw)) { const o={}; raw.forEach(d=>o[d]=1); return o; }
-    return raw;
-  } catch { return {}; }
+  try { return JSON.parse(localStorage.getItem(STAMP_KEY) || '{}'); } catch { return {}; }
 }
 function saveStamps(o) { localStorage.setItem(STAMP_KEY, JSON.stringify(o)); }
+function loadStampImgs() {
+  try { return JSON.parse(localStorage.getItem(STAMP_IMG_KEY) || '[]'); } catch { return []; }
+}
+function saveStampImgs(imgs) { localStorage.setItem(STAMP_IMG_KEY, JSON.stringify(imgs)); }
 function toDateStr(d) { return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`; }
 
-function stampImgHtml(id, cls='stamp-img') {
-  const s = STAMP_LIST.find(s=>s.id===id) || STAMP_LIST[0];
-  return `<img src="${s.src}" class="${cls}" alt="${s.fb}" onerror="this.replaceWith(Object.assign(document.createElement('span'),{textContent:'${s.fb}',style:'font-size:1.6em'}))">`;
-}
-
 function goStamp() {
-  const now = new Date();
-  stampYear  = now.getFullYear();
-  stampMonth = now.getMonth();
-  renderStampCal();
-  showScreen('stamp-screen');
+  const now = new Date(); stampYear = now.getFullYear(); stampMonth = now.getMonth();
+  renderStampCal(); showScreen('stamp-screen');
 }
-
 function prevMonth() { if (--stampMonth < 0) { stampMonth=11; stampYear--; } renderStampCal(); }
-function nextMonth() { if (++stampMonth > 11) { stampMonth=0;  stampYear++; } renderStampCal(); }
+function nextMonth() { if (++stampMonth > 11) { stampMonth=0; stampYear++; } renderStampCal(); }
 
 function renderStampCal() {
   document.getElementById('stamp-month-label').textContent = `${stampYear}年${stampMonth+1}月`;
-  const stamps   = loadStamps();
-  const today    = new Date();
-  const todayStr = toDateStr(today);
+  const stamps = loadStamps(), imgs = loadStampImgs();
+  const today = new Date(), todayStr = toDateStr(today);
   const firstDow = new Date(stampYear, stampMonth, 1).getDay();
   const daysInM  = new Date(stampYear, stampMonth+1, 0).getDate();
   const DAY_NAMES = ['日','月','火','水','木','金','土'];
   const DOW_CLS   = ['sun','','','','','','sat'];
-
   let html = DAY_NAMES.map((n,i) => `<div class="cal-hd ${DOW_CLS[i]}">${n}</div>`).join('');
   for (let i = 0; i < firstDow; i++) html += '<div class="cal-cell"></div>';
-
   for (let d = 1; d <= daysInM; d++) {
-    const dt  = new Date(stampYear, stampMonth, d);
-    const ds  = toDateStr(dt);
-    const dow = dt.getDay();
-    const isToday   = ds === todayStr;
-    const stampId   = stamps[ds];
-    const isFuture  = dt > today && ds !== todayStr;
-    const dowCls    = dow===0?'sun':dow===6?'sat':'';
-    html += `<div class="cal-cell ${isToday?'cal-today':''} ${isFuture?'cal-future':''}">
-      ${stampId
-        ? `${stampImgHtml(stampId)}<span class="cal-day-small">${d}</span>`
-        : `<span class="cal-day ${dowCls} ${isFuture?'dim':''}">${d}</span>`}
-    </div>`;
+    const dt = new Date(stampYear, stampMonth, d), ds = toDateStr(dt), dow = dt.getDay();
+    const isToday = ds === todayStr, isFuture = dt > today && ds !== todayStr;
+    const idx = stamps[ds] != null ? stamps[ds] : -1;
+    const dowCls = dow===0?'sun':dow===6?'sat':'';
+    const inner = idx >= 0 && imgs[idx]
+      ? `<img src="${imgs[idx]}" class="stamp-img" alt="stamp"><span class="cal-day-small">${d}</span>`
+      : `<span class="cal-day ${dowCls} ${isFuture?'dim':''}">${d}</span>`;
+    html += `<div class="cal-cell ${isToday?'cal-today':''} ${isFuture?'cal-future':''}">${inner}</div>`;
   }
   document.getElementById('stamp-cal').innerHTML = html;
-
-  const isThisMonth = stampYear === today.getFullYear() && stampMonth === today.getMonth();
-  const todayId     = stamps[todayStr];
+  const isThisMonth = stampYear===today.getFullYear() && stampMonth===today.getMonth();
   const btn = document.getElementById('stamp-press-btn');
   btn.style.display = isThisMonth ? 'block' : 'none';
-  btn.textContent   = todayId ? '今日のスタンプを変える' : '今日のスタンプを押す！';
-
+  btn.textContent = stamps[todayStr]!=null ? '今日のスタンプを変える' : '今日のスタンプを押す！';
   updateStampHomeSub();
 }
 
 function pressStamp() { openStampSheet(); }
-
 function openStampSheet() {
-  document.getElementById('stamp-sel-grid').innerHTML = STAMP_LIST.map(s =>
-    `<button class="stamp-sel-btn" onclick="selectStamp(${s.id})">
-      ${stampImgHtml(s.id,'stamp-sel-img')}
-    </button>`
-  ).join('');
+  renderStampSelGrid();
   document.getElementById('stamp-sel-ov').classList.add('open');
   document.getElementById('stamp-sel-panel').classList.add('open');
 }
@@ -1118,24 +1140,45 @@ function closeStampSheet() {
   document.getElementById('stamp-sel-ov').classList.remove('open');
   document.getElementById('stamp-sel-panel').classList.remove('open');
 }
-function selectStamp(id) {
-  const stamps   = loadStamps();
-  const todayStr = toDateStr(new Date());
-  stamps[todayStr] = id;
-  saveStamps(stamps);
-  closeStampSheet();
-  renderStampCal();
+function renderStampSelGrid() {
+  const imgs = loadStampImgs();
+  let html = imgs.length === 0
+    ? `<div class="stamp-empty">＋ボタンから画像を追加してください</div>` : '';
+  html += imgs.map((src, i) =>
+    `<div class="stamp-slot" onclick="selectStamp(${i})">
+       <img src="${src}" alt="">
+       <span class="stamp-slot-del" onclick="event.stopPropagation();deleteStampImg(${i})">×</span>
+     </div>`
+  ).join('');
+  html += `<div class="stamp-slot stamp-slot-add" onclick="document.getElementById('stamp-img-input').click()">＋</div>`;
+  document.getElementById('stamp-sel-grid').innerHTML = html;
 }
-
-function updateStampHomeSub() {
-  const el = document.getElementById('stamp-home-sub');
-  if (!el) return;
+function selectStamp(idx) {
+  const stamps = loadStamps(), todayStr = toDateStr(new Date());
+  stamps[todayStr] = idx; saveStamps(stamps);
+  closeStampSheet(); renderStampCal();
+}
+function deleteStampImg(idx) {
+  const imgs = loadStampImgs(); imgs.splice(idx, 1); saveStampImgs(imgs);
   const stamps = loadStamps();
-  const now    = new Date();
+  Object.keys(stamps).forEach(d => {
+    if (stamps[d] === idx) delete stamps[d];
+    else if (stamps[d] > idx) stamps[d]--;
+  });
+  saveStamps(stamps); renderStampSelGrid(); renderStampCal();
+}
+document.getElementById('stamp-img-input').addEventListener('change', e => {
+  const file = e.target.files[0]; if (!file) return;
+  const reader = new FileReader();
+  reader.onload = ev => { const imgs=loadStampImgs(); imgs.push(ev.target.result); saveStampImgs(imgs); renderStampSelGrid(); };
+  reader.readAsDataURL(file); e.target.value = '';
+});
+function updateStampHomeSub() {
+  const el = document.getElementById('stamp-home-sub'); if (!el) return;
+  const stamps = loadStamps(), now = new Date();
   const prefix = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}`;
-  const count  = Object.keys(stamps).filter(d=>d.startsWith(prefix)).length;
-  const todayDone = !!stamps[toDateStr(now)];
-  el.textContent = `今月 ${count}個${todayDone ? '　今日は押し済み✓' : '　今日はまだ'}`;
+  const count = Object.keys(stamps).filter(d => d.startsWith(prefix)).length;
+  el.textContent = `今月 ${count}個${stamps[toDateStr(now)]!=null ? '　今日は押し済み✓' : '　今日はまだ'}`;
 }
 
 /* ── Doc Add ── */
@@ -1374,6 +1417,7 @@ if ('serviceWorker' in navigator) {
 /* ── Init ── */
 renderUserArea();
 renderHome();
+loadBgImage();
 updateStampHomeSub();
 </script>
 </body>
